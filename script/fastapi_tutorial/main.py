@@ -1,7 +1,8 @@
 import requests
 
-item_id = 'alexnet'
-url = f'http://localhost:8000/models/{item_id}'
+url = f'http://localhost:8000/items/hello'
 
-response = requests.get(url)
+data = {'q': 1, 'short': False}
+
+response = requests.get(url, params=data)
 print(response.json())
