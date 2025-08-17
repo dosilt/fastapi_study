@@ -1,8 +1,8 @@
 """
-GET 요청엔 body를 담지 않음
-POST
-PUT
-DELETE
+GET : 데이터 읽기만 변경 없음
+POST : 새 리소스 생성, body에 생성할 데이터
+PUT : 리소스 전체 교체
+DELETE : 리소스 삭제
 
 Pydantic으로 작성시 요청 본문으로 호출 해야됨 (request에서 json={data})
 쿼리 매개변수 or 변수 타입 지정으로 작성시 (request에서 params={data}) 로 호출
