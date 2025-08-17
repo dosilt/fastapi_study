@@ -1,8 +1,9 @@
 import requests
 
-url = f'http://localhost:8000/items/hello'
+# url = f'http://localhost:8000/items'
+data = {'name': 'hello', 'description': 'test', 'price': 5000, 'tax': 500}
+# response = requests.post(url, json=data)
 
-data = {'q': 1, 'short': False}
-
-response = requests.get(url, params=data)
+url = f'http://localhost:8000/items/13'
+response = requests.put(url, json=data)
 print(response.json())
