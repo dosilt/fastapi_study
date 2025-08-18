@@ -13,14 +13,27 @@ import requests
 # response = requests.get(url)
 
 
+# url = "http://localhost:8456/items/1"
+# response = requests.put(
+#     url,
+#     # params={"q": 1},
+#     json={
+#         "item": {"name": "laptop", "price": 1000.0, "tax": 100.0},
+#         # "user": {"username": "hello", "full_name": "mister"},
+#         # "importance": 5,
+#     },
+# )
+
 url = "http://localhost:8456/items/1"
 response = requests.put(
     url,
-    # params={"q": 1},
     json={
-        "item": {"name": "laptop", "price": 1000.0, "tax": 100.0},
-        # "user": {"username": "hello", "full_name": "mister"},
-        # "importance": 5,
+        "item": {
+            "name": "laptop",
+            "price": 500,
+            "image": [{"url": "http://example.com/baz.jpg", "name": "The Foo live"}],
+        }
     },
 )
+
 print(response.json())
