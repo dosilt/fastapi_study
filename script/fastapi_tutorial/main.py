@@ -62,8 +62,17 @@ import requests
 # print(response.json())
 
 
-cookies = {"session_id": "user123session", "fatebook_tracker": "fb_campaign_456", "googall_tracker": "google_ads_789"}
+# cookies = {"session_id": "user123session", "fatebook_tracker": "fb_campaign_456", "googall_tracker": "google_ads_789"}
 
-response = requests.get("http://localhost:8456/items", cookies=cookies)
-print("Cookie Models")
+# response = requests.get("http://localhost:8456/items", cookies=cookies)
+# print("Cookie Models")
+# print(response.json())
+
+
+# user_info = {"username": "hello", "password": "bye", "email": "asdf@naver.com"}
+# response = requests.post("http://localhost:8456/user", json=user_info)
+# print(response.json())
+
+
+response = requests.get("http://localhost:8456/items/baz")
 print(response.json())
