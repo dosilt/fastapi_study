@@ -1,3 +1,8 @@
+"""
+Path parameter에도 Query처럼 제한을 줄 수 있음.
+from fastapi import Path (query와 비슷한듯?)
+"""
+
 from fastapi import FastAPI, Path, Query
 
 app = FastAPI()

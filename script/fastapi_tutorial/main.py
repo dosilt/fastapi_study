@@ -13,6 +13,6 @@ import requests
 # response = requests.get(url)
 
 
-url = "http://localhost:8456/items/0"
-response = requests.get(url, params={"item-query": "hello", "size": 5})
+url = "http://localhost:8456/items"
+response = requests.get(url, params={"limit": 50})
 print(response.json())
