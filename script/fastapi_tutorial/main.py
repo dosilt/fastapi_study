@@ -25,15 +25,6 @@ import requests
 # )
 
 url = "http://localhost:8456/items/1"
-response = requests.put(
-    url,
-    json={
-        "item": {
-            "name": "laptop",
-            "price": 500,
-            "image": [{"url": "http://example.com/baz.jpg", "name": "The Foo live"}],
-        }
-    },
-)
+response = requests.put(url, json={"name": "Foo", "price": 10})
 
 print(response.json())
