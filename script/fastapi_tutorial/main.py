@@ -69,10 +69,10 @@ import requests
 # print(response.json())
 
 
-# user_info = {"username": "hello", "password": "bye", "email": "asdf@naver.com"}
-# response = requests.post("http://localhost:8456/user", json=user_info)
-# print(response.json())
-
-
-response = requests.get("http://localhost:8456/items/baz")
+user_info = {"username": "hello", "password": "bye", "email": "asdf@naver.com"}
+response = requests.post("http://localhost:8456/user", json=user_info)
 print(response.json())
+
+
+# response = requests.get("http://localhost:8456/items/baz")
+# print(response.json())
