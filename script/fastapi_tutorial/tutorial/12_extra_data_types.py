@@ -1,5 +1,8 @@
 """
 UUID : primary key를 선언할 때, 이용함. str로 표현됨
+
+- Body()로 묶인 것들은 json 형태로 requests를 보냄
+
 datetime.datetime : datetime과 동일
 datetime.date : date만 출력
 datetime.time : time만 출력

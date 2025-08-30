@@ -16,6 +16,12 @@ async def update_item(item_id: int, item: Item = Body(embed=True)):
     results = {"item_id": item_id, "item": item}
     return results
 
+"""
+requests.put('http://localhost:8456/itmes/item_id',
+    json={item: {name: '', description: '', price: '', tax: ''}})
+
+"""
+
 
 if __name__ == "__main__":
     import uvicorn

@@ -69,10 +69,26 @@ import requests
 # print(response.json())
 
 
-user_info = {"username": "hello", "password": "bye", "email": "asdf@naver.com"}
-response = requests.post("http://localhost:8456/user", json=user_info)
-print(response.json())
+# user_info = {"username": "hello", "password": "bye", "email": "asdf@naver.com"}
+# response = requests.post("http://localhost:8456/user", json=user_info)
+# print(response.json())
 
 
 # response = requests.get("http://localhost:8456/items/baz")
 # print(response.json())
+
+# response = requests.post('http://localhost:8456/login',
+#                          data={'username': 'hello', 
+#                                'password': 'bye'})
+
+# print(response.json())
+
+import os
+
+file_path = os.path.join(os.path.dirname(__file__), 'tutorial', '01_first_steps.py')
+with open(file_path, 'rb') as f:
+    response = requests.post(
+        "http://localhost:8456/upload_files",
+        files={"file": f}
+    )
+    print(response.json())
