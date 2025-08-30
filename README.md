@@ -2,6 +2,9 @@
 
 FastAPI 학습을 위한 프로젝트입니다.
 
+- window에서 uv 설치법
+  - winget install astral-sh.uv (powershell에서 실행)
+
 ## 프로젝트 구조
 
 ```
